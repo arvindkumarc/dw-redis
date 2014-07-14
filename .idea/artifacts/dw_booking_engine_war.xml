@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="dw-booking-engine:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <root id="archive" name="booking-engine.war">
+      <element id="artifact" artifact-name="dw-booking-engine:war exploded" />
+    </root>
+  </artifact>
+</component>

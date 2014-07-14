@@ -1,0 +1,34 @@
+http:
+  port: 8080
+  adminPort: 8081
+  maxThreads: 256
+  connectorType: nonblocking
+  maxIdleTime: 10s
+  acceptorThreads: 1
+  acceptorThreadPriorityOffset: 0
+  acceptQueueSize: 2048
+  maxBufferCount: 2048
+  requestBufferSize: 32KB
+  requestHeaderBufferSize: 6KB
+  responseBufferSize: 32KB
+  responseHeaderBufferSize: 6KB
+  reuseAddress: true
+  soLingerTime: 1s
+  lowResourcesConnectionThreshold: 25000
+  lowResourcesMaxIdleTime: 5s
+  shutdownGracePeriod: 2s
+  useForwardedHeaders: true
+  useDirectBuffers: true
+  requestLog:
+    console:
+      enabled: false
+      timeZone: IST
+
+databaseConfiguration:
+  driverClass: org.postgresql.Driver
+  user: postgres
+  password:
+  url: jdbc:postgresql://127.0.0.1/booking_engine
+  properties:
+    charSet: UTF-8
+    instanceName: Booking Engine DB
